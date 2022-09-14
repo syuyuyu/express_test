@@ -1,0 +1,36 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.button-container {
+  margin: 1rem;
+  width: 400px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+}
+
+.btn:first-child {
+  position: relative;
+  left: -80px;
+}
+
+.btn {
+  border: 0px;
+  font-size: 1rem;
+  height: 2.5rem;
+  width: 5rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  margin: 2px;
+  padding: 0 2px;
+}
+
+.btn:hover {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+.target {
+  background-color: rgba(0, 0, 0, 0.6);
+}
