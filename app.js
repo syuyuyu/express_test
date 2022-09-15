@@ -8,18 +8,18 @@ app.set('view engine', 'handlebars');
 
 app.use(express.static('public'))
 
-
 app.get('/', (req, res) => {
-  res.render('index')
+  res.render('index', { pageHome: 'bg-dark' })
 })
 app.get('/about', (req, res) => {
-  res.render('about')
+  // const pathName = req.path.slice(1)
+  res.render('about', { pageAbout: 'bg-dark' })
 })
 app.get('/portfolio', (req, res) => {
-  res.render('portfolio')
+  res.render('portfolio', { pagePortfolio: 'bg-dark' })
 })
 app.get('/contact', (req, res) => {
-  res.render('contact')
+  res.render('contact', { pageContact: 'bg-dark' })
 })
 
 app.listen(port, () => {
