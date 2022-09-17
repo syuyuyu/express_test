@@ -12,7 +12,6 @@ app.get('/', (req, res) => {
   res.render('index', { pageHome: 'bg-dark' })
 })
 app.get('/about', (req, res) => {
-  // const pathName = req.path.slice(1)
   res.render('about', { pageAbout: 'bg-dark' })
 })
 app.get('/portfolio', (req, res) => {
